@@ -1,0 +1,39 @@
+{
+  "name": "react-jsc3d",
+  "description": "React port of JSC3D software 3D mesh renderer",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/michaelpb/react-jsc3d.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "jsc3d",
+    "render",
+    "model",
+    "stl",
+    "obj",
+    "3d"
+  ],
+  "author": "michaelb",
+  "version": "0.1.0",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-scripts": "1.0.14"
+  },
+  "bugs": {
+    "url": "https://github.com/michaelpb/react-jsc3d/issues"
+  },
+  "homepage": "https://github.com/michaelpb/react-jsc3d#readme",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  }
+}
