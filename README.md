@@ -5,9 +5,11 @@
 ![react-jsc3d badge](https://badge.fury.io/js/react-jsc3d.png)
 
 React.js component that wraps [JSC3D, a CPU ray tracer for STL and OBJ
-files](https://github.com/xxv/jsc3d/tree/master/jsc3d)](https://github.com/xxv/jsc3d/tree/master/jsc3d).
+files](https://github.com/xxv/jsc3d/tree/master/jsc3d).
 
-Originally built for [OmniC](http://omnic.michaelb.org/).
+Originally built for [OmniConverter - a stateless microservice framework that
+creates on-the-fly thumbs and previews of a zillion different
+filetypes](http://omnic.michaelb.org/).
 
 ![Example screenshot](https://github.com/michaelpb/react-jsc3d/raw/master/public/test-media/example_screenshot.jpg)
 
