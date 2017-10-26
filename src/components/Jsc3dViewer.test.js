@@ -2,9 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Jsc3dViewer from './Jsc3dViewer';
 
-it('renders without crashing', () => {
+it('renders STL without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(<Jsc3dViewer sceneUrl={'/test-media/gear.stl'} />, div);
+});
+
+it('renders OBJ without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Jsc3dViewer sceneUrl={'/test-media/trumpet.obj'} />, div);
 });
 
 it('has a static method transformValue that transforms props', () => {

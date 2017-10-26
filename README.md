@@ -9,6 +9,8 @@ files](https://github.com/xxv/jsc3d/tree/master/jsc3d)](https://github.com/xxv/j
 
 Originally built for [OmniC](http://omnic.michaelb.org/).
 
+![Example screenshot](https://github.com/michaelpb/react-jsc3d/raw/master/public/test-media/example_screenshot.jpg)
+
 # Usage
 
 Install:
@@ -19,7 +21,7 @@ npm install --save react-jsc3d
 
 Use as you would any other React component:
 
-```
+```jsx
 import React, { Component } from 'react';
 import Jsc3dViewer from 'react-jsc3d';
 class Example extends Component {
@@ -29,7 +31,6 @@ class Example extends Component {
         );
     }
 }
-);
 ```
 
 # Properties

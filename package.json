@@ -10,7 +10,10 @@
     "component",
     "jsc3d",
     "render",
+    "raytrace",
+    "graphics",
     "model",
+    "mesh",
     "stl",
     "obj",
     "3d"
