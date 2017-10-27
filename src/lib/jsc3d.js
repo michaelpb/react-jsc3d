@@ -24,7 +24,7 @@
 
 
 ////////////////////////////////////////
-// Currently, the only changes by michaelb
+// Currently, only 1 of 2 changes by michaelb (other is on line 1237)
 /* eslint-disable */
 var JSC3D = JSC3D || {};
 if (module) module.exports = JSC3D;
@@ -1234,7 +1234,8 @@ JSC3D.Viewer.prototype.reportError = function(message) {
     }
 
     // hide the progress bar if it is visible
-    if(this.progressFrame.style.display != 'none') {
+    // michaelb change #2
+    if(this.progressFrame && this.progressFrame.style.display != 'none') {
         this.progressFrame.style.display = 'none';
         this.progressRectangle.style.display = 'none';
     }

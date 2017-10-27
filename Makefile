@@ -10,7 +10,7 @@ lint:
 	./node_modules/.bin/eslint src
 
 test:
-	CI=1 npm test
+	npm test
 
 test-watch:
 	find lib/ spec/ static/ -name \*.js | entr -r npm test
