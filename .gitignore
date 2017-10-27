@@ -32,7 +32,7 @@ yarn-error.log*
 # NWB stuff
 /coverage
 /demo/dist
-/es
+# /es  # for now checking in es
 /lib
 /umd
 

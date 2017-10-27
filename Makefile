@@ -6,6 +6,9 @@ help:
 	@echo "release - package and upload a release on npm"
 	@echo "bump-and-push - run tests, lint, bump patch, push to git, and release on npm"
 
+build:
+	npm build
+
 lint:
 	./node_modules/.bin/eslint src
 
@@ -15,7 +18,7 @@ test:
 test-watch:
 	find lib/ spec/ static/ -name \*.js | entr -r npm test
 
-bump-and-push: test
+bump-and-push: test build
 	bumpversion patch
 	git push
 	git push --tags
