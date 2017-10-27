@@ -1,5 +1,7 @@
 ## Prerequisites
 
+- [CONDUCT.md](CONDUCT.md)
+
 [Node.js](http://nodejs.org/) >= v4 must be installed.
 
 ## Installation
