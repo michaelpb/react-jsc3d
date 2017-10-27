@@ -7,7 +7,7 @@ help:
 	@echo "bump-and-push - run tests, lint, bump patch, push to git, and release on npm"
 
 build:
-	npm build
+	npm build -- --copy-files --no-demo
 
 lint:
 	./node_modules/.bin/eslint src
