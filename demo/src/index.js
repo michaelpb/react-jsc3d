@@ -1,15 +1,21 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React, {Component} from 'react';
+import {render} from 'react-dom';
 
-import Example from '../../src'
+import './index.css';
+
+import Jsc3dViewer from '../../src';
 
 class Demo extends Component {
-  render() {
-    return <div>
-      <h1>react-jsc3d Demo</h1>
-      <Example/>
-    </div>
-  }
+    render() {
+        return (
+            <div className="wrapper">
+                <h1>react-jsc3d Demo</h1>
+                <Jsc3dViewer
+                    sceneUrl='test-media/trumpet.obj'
+                />
+            </div>
+        );
+    }
 }
 
 render(<Demo/>, document.querySelector('#demo'))

@@ -11,7 +11,7 @@ Originally built for [OmniConverter - a stateless microservice framework that
 creates on-the-fly thumbs and previews of a zillion different
 filetypes](http://omnic.michaelb.org/).
 
-![Example screenshot](https://github.com/michaelpb/react-jsc3d/raw/master/public/test-media/example_screenshot.jpg)
+![Example screenshot](https://github.com/michaelpb/react-jsc3d/raw/master/demo/example_screenshot.jpg)
 
 # Usage
 
