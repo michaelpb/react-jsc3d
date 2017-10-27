@@ -20,7 +20,7 @@
     "3d"
   ],
   "author": "michaelb",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "license": "MIT",
   "devDependencies": {
     "react": "16.0.0",
