@@ -1,6 +1,7 @@
 {
   "name": "react-jsc3d",
   "description": "React port of JSC3D software 3D mesh renderer",
+  "main": "src/components/Jsc3dViewer.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/michaelpb/react-jsc3d.git"
