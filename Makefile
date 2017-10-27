@@ -7,15 +7,15 @@ help:
 	@echo "bump-and-push - run tests, lint, bump patch, push to git, and release on npm"
 
 lint:
-	./node_modules/.bin/eslint lib spec static
+	./node_modules/.bin/eslint src
 
 test:
-	npm run test-headless
+	CI=1 npm test
 
 test-watch:
-	find lib/ spec/ static/ -name \*.js | entr -r npm run test-headless
+	find lib/ spec/ static/ -name \*.js | entr -r npm test
 
-bump-and-push: test lint
+bump-and-push: test
 	bumpversion patch
 	git push
 	git push --tags
