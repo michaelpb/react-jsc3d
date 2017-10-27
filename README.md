@@ -1,8 +1,8 @@
-# react-jsc3d
+# React JSC3D
 
-![Travis CI](https://travis-ci.org/michaelpb/react-jsc3d.svg?branch=master)
-
-![react-jsc3d badge](https://badge.fury.io/js/react-jsc3d.png)
+[![Travis][build-badge]][build]
+[![npm package][npm-badge]][npm]
+[![Coveralls][coveralls-badge]][coveralls]
 
 React.js component that wraps [JSC3D, a CPU ray tracer for STL and OBJ
 files](https://github.com/xxv/jsc3d/tree/master/jsc3d).
@@ -88,3 +88,12 @@ description from the JSC3D source code:
 * [Contribution code of conduct.](CONDUCT.md)
 
 * Like the original JSC3D, react-jsc3d licensed under MIT.
+
+[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
+[build]: https://travis-ci.org/user/repo
+
+[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm]: https://www.npmjs.org/package/npm-package
+
+[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
+[coveralls]: https://coveralls.io/github/user/repo

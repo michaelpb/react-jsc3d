@@ -1,11 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Jsc3dViewer from './components/Jsc3dViewer';
-import registerServiceWorker from './registerServiceWorker';
+import React, {Component} from 'react'
 
-ReactDOM.render(
-    <Jsc3dViewer sceneUrl={'/test-media/trumpet.obj'} />,
-    document.getElementById('root'),
-);
-registerServiceWorker();
+export default class extends Component {
+  render() {
+    return <div>
+      <h2>Welcome to React components</h2>
+    </div>
+  }
+}
