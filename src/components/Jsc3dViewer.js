@@ -48,51 +48,7 @@ function colorPropType(props, propName, componentName) {
     }
 }
 
-export default class Jsc3dViewer extends Component {
-    static propTypes = {
-        sceneUrl: PropTypes.string.isRequired,
-        height: dimensionPropType,
-        width: dimensionPropType,
-        initRotationX: degreesPropType,
-        initRotationY: degreesPropType,
-        initRotationZ: degreesPropType,
-        modelColor: colorPropType,
-        backgroundColor1: colorPropType,
-        backgroundColor2: colorPropType,
-        backgroundImageUrl: PropTypes.string,
-        background: PropTypes.bool,
-        renderMode: PropTypes.oneOf( ['point', 'wireframe', 'flat', 'smooth',
-            'texture', 'textureflat', 'texturesmooth']),
-        definition: PropTypes.oneOf(['low', 'high', 'standard']),
-
-        faceCulling: PropTypes.bool,
-        mipMapping: PropTypes.bool,
-        creaseAngle: PropTypes.number,
-        sphereMapUrl: PropTypes.string,
-        progressBar: PropTypes.bool,
-        renderer: PropTypes.oneOf(['webgl', '']),
-        localBuffers: PropTypes.oneOf(['release', 'retain']),
-        mouse: PropTypes.oneOf([false, 'rotate', 'zoom', 'pan']),
-    }
-
-    static defaultProps = {
-        height: 'auto',
-        width: 'auto',
-        initRotationX: 45,
-        initRotationY: -45,
-        initRotationZ: -135,
-        background: false,
-        modelColor: '#ffffff',
-        backgroundColor1: '#ffffff',
-        backgroundColor2: '#ffffff',
-        backgroundImageUrl: '',
-        progressBar: false,
-        renderMode: 'flat',
-        renderer: 'webgl',
-        definition: 'high',
-        mouse: 'rotate',
-    }
-
+class Jsc3dViewer extends Component {
     constructor (...args) {
         super(...args);
         this.viewer = null;
@@ -167,3 +123,48 @@ export default class Jsc3dViewer extends Component {
     }
 }
 
+Jsc3dViewer.propTypes = {
+    sceneUrl: PropTypes.string.isRequired,
+    height: dimensionPropType,
+    width: dimensionPropType,
+    initRotationX: degreesPropType,
+    initRotationY: degreesPropType,
+    initRotationZ: degreesPropType,
+    modelColor: colorPropType,
+    backgroundColor1: colorPropType,
+    backgroundColor2: colorPropType,
+    backgroundImageUrl: PropTypes.string,
+    background: PropTypes.bool,
+    renderMode: PropTypes.oneOf( ['point', 'wireframe', 'flat', 'smooth',
+        'texture', 'textureflat', 'texturesmooth']),
+    definition: PropTypes.oneOf(['low', 'high', 'standard']),
+
+    faceCulling: PropTypes.bool,
+    mipMapping: PropTypes.bool,
+    creaseAngle: PropTypes.number,
+    sphereMapUrl: PropTypes.string,
+    progressBar: PropTypes.bool,
+    renderer: PropTypes.oneOf(['webgl', '']),
+    localBuffers: PropTypes.oneOf(['release', 'retain']),
+    mouse: PropTypes.oneOf([false, 'rotate', 'zoom', 'pan']),
+};
+
+Jsc3dViewer.defaultProps = {
+    height: 'auto',
+    width: 'auto',
+    initRotationX: 45,
+    initRotationY: -45,
+    initRotationZ: -135,
+    background: false,
+    modelColor: '#ffffff',
+    backgroundColor1: '#ffffff',
+    backgroundColor2: '#ffffff',
+    backgroundImageUrl: '',
+    progressBar: false,
+    renderMode: 'flat',
+    renderer: 'webgl',
+    definition: 'high',
+    mouse: 'rotate',
+};
+
+export default Jsc3dViewer;
